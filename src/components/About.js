@@ -25,6 +25,27 @@ export default function About() {
                             className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
                             See My Portfolio
                         </a>
+                        <a
+                            href="https://github.com/twxshy"
+                            className="ml-4 inline-flex"
+                            target="_blank"
+                            rel="noreferrer">
+                            <img src="https://github.com/danielcranney/profileme-dev/blob/main/public/icons/socials/github-dark.svg" width="32" height="32" />
+                        </a>
+                        <a
+                            href="https://www.x.com/nullogan"
+                            className="ml-4 inline-flex"
+                            target="_blank"
+                            rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/twitter-dark.svg" width="32" height="32" />
+                        </a>
+                        <a
+                            href="https://discord.com/users/twxshy"
+                            className="ml-4 inline-flex"
+                            target="_blank"
+                            rel="noreferrer">
+                            <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/discord.svg" width="32" height="32" />
+                        </a>
                     </div>
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
