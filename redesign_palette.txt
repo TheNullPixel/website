@@ -1,0 +1,8 @@
+--lavender-pink: #E5A3CEff;
+--french-violet: #6A14CDff;
+--royal-blue-traditional: #012273ff;
+--purple-pizzazz: #F448EAff;
+--grape: #7321A1ff;
+--russian-violet: #160C49ff;
+--persian-blue: #3340B0ff;
+--blue-crayola: #1D74F3ff;

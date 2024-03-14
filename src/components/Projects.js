@@ -12,13 +12,14 @@ export default function Projects() {
                         My Portfolio
                     </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-                        facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-                        fuga dolore.
+                        Browse the gallery of my projects below, each project links to the git repository or deployed application.
                     </p>
                 </div>
                 <div className="flex flex-wrap -m-4">
-                    {projects.map((project) => (
+                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                        🚀 Coming Soon!
+                    </p>
+                    {/* {projects.map((project) => (
                         <a
                             href={project.link}
                             key={project.image}
@@ -40,7 +41,7 @@ export default function Projects() {
                                 </div>
                             </div>
                         </a>
-                    ))}
+                    ))} */}
                 </div>
             </div>
         </section>
