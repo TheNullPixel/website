@@ -11,7 +11,10 @@ export default function References() {
                     References
                 </h1>
                 <div className="flex flex-wrap m-4">
-                    {references.map((testimonial) => (
+                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                        🚀 Coming Soon!
+                    </p>
+                    {/* {references.map((testimonial) => (
                         <div className="p-4 md:w-1/2 w-full">
                             <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
                                 <TerminalIcon className="block w-8 text-gray-500 mb-4" />
@@ -33,7 +36,7 @@ export default function References() {
                                 </div>
                             </div>
                         </div>
-                    ))}
+                    ))} */}
                 </div>
             </div>
         </section>
