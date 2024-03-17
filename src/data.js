@@ -8,23 +8,6 @@ export const projects = [
   },
 ];
 
-// export const qualifications = [
-//   {
-//     quote:
-//       "",
-//     image: "",
-//     name: "Placeholder",
-//     company: "Placeholder",
-//   },
-//   {
-//     quote:
-//       "",
-//     image: "",
-//     name: "Placeholder",
-//     company: "Placeholder",
-//   },
-// ];
-
 export const skills = [
   "Git",
   "HTML5",

@@ -19,13 +19,13 @@ export default function About() {
           <div className="flex justify-center">
             <a
               href="#contact"
-              className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
+              className="inline-flex text-white bg-blue border-0 py-2 px-6 focus:outline-none hover:bg-teal hover:text-black rounded text-lg"
             >
               Contact Me
             </a>
             <a
               href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+              className="ml-4 inline-flex text-white bg-blue border-0 py-2 px-6 focus:outline-none hover:bg-teal hover:text-black rounded text-lg"
             >
               See My Portfolio
             </a>
@@ -33,17 +33,27 @@ export default function About() {
               href="https://github.com/null-pixel-dev"
               className="ml-4 inline-flex"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
-              <img src="./github-dark.svg" width="32" height="32" />
+              <img
+                src="./github-dark.svg"
+                width="32"
+                height="32"
+                alt="GitHub"
+              />
             </a>
             <a
-              href="https://www.x.com/nullpixeldev"
+              href="https://www.twitter.com/nullpixeldev"
               className="ml-4 inline-flex"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
-              <img src="./twitter-dark.svg" width="32" height="32" />
+              <img
+                src="./twitter-dark.svg"
+                width="32"
+                height="32"
+                alt="Twitter"
+              />
             </a>
           </div>
         </div>
