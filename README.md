@@ -1,6 +1,6 @@
 # nullogan-portfolio
 
-This project is a first attempt at a website to showcase a portfolio, skills, references and contact options.
+This project is a first attempt at a website to showcase a portfolio, skills, qualifications and contact options.
 
 The project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

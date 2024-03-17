@@ -1,64 +1,39 @@
 export const projects = [
   {
-    title: "Placeholder",
-    subtitle: "Placeholder",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "",
-    link: "",
-  },
-  {
-    title: "Placeholder",
-    subtitle: "Placeholder",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "",
-    link: "",
-  },
-  {
-    title: "Placeholder",
-    subtitle: "Placeholder",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "",
-    link: "",
-  },
-  {
-    title: "Placeholder",
-    subtitle: "Placeholders",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "",
-    link: "",
+    title: "Terminal Website",
+    subtitle: "Raw HTML, CSS and JS",
+    description: "A simple terminal website containing predefined commands.",
+    image: "./terminal.png",
+    link: "https://github.com/null-pixel-dev/null-pixel-dev.github.io",
   },
 ];
 
-export const references = [
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "",
-    name: "Placeholder",
-    company: "Placeholder",
-  },
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "",
-    name: "Placeholder",
-    company: "Placeholder",
-  },
-];
+// export const qualifications = [
+//   {
+//     quote:
+//       "",
+//     image: "",
+//     name: "Placeholder",
+//     company: "Placeholder",
+//   },
+//   {
+//     quote:
+//       "",
+//     image: "",
+//     name: "Placeholder",
+//     company: "Placeholder",
+//   },
+// ];
 
 export const skills = [
   "Git",
+  "HTML5",
+  "CSS3",
+  "Tailwind",
   "JavaScript",
   "TypeScript",
   "React",
-  "CSS3",
-  "HTML5",
   "Node.js",
+  "Docker",
   "Figma",
-  "Bash",
-  "Linux"
 ];

@@ -4,7 +4,7 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import References from "./components/References";
+import Qualifications from "./components/Qualifications";
 
 export default function App() {
   return (
@@ -13,8 +13,8 @@ export default function App() {
       <About />
       <Projects />
       <Skills />
-      <References/>
-      <Contact/>
+      <Qualifications />
+      <Contact />
     </main>
   );
 }
