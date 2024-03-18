@@ -1,28 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const [submitted, setSubmitted] = useState(false);
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
+  const formEndpoint = "https://formspree.io/f/xrgnapwr";
 
-  function handleSubmit(e) {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
+
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("message", message);
+
+    try {
+      const response = await fetch(formEndpoint, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setName("");
+        setEmail("");
+        setMessage("");
+        setSubmitted(true);
+        alert("Thank you for your message!");
+      } else {
+        throw new Error("Network response was not ok.");
+      }
+    } catch (error) {
+      alert("There was a problem with your submission: ", error.message);
+    }
+  };
   return (
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -37,8 +52,6 @@ export default function Contact() {
           />
         </div>
         <form
-          netlify
-          name="contact"
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
@@ -57,6 +70,7 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
+              value={name}
               className="w-full bg-gray rounded border border-white focus:border-blue focus:ring-2 focus:ring-accent text-white outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setName(e.target.value)}
             />
@@ -69,6 +83,7 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
+              value={email}
               className="w-full bg-gray rounded border border-white focus:border-blue focus:ring-2 focus:ring-teal text-white outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -80,12 +95,14 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
+              value={message}
               className="w-full bg-gray rounded border border-white focus:border-blue focus:ring-2 focus:ring-teal h-32 text-base outline-none text-white py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
           <button
             type="submit"
+            value={submitted}
             className="font-orbitron text-white bg-blue border-0 py-2 px-6 focus:outline-none hover:bg-teal hover:text-black rounded text-lg"
           >
             Submit

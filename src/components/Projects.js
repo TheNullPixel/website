@@ -31,9 +31,16 @@ export default function Projects() {
                   src={project.image}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray bg-black opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-blue mb-1">
-                    {project.subtitle}
-                  </h2>
+                  <div className="flex justify-center space-x-2 mb-1">
+                    {project.techStack.map((tech) => (
+                      <img
+                        key={tech.name}
+                        src={tech.icon}
+                        alt={tech.name}
+                        className="h-8 w-8"
+                      />
+                    ))}
+                  </div>
                   <h1 className="title-font text-lg font-orbitron font-medium text-white mb-3">
                     {project.title}
                   </h1>
