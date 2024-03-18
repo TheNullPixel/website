@@ -1,6 +1,7 @@
 {
   "name": "null-pixel-dev-portfolio",
   "version": "0.1.0",
+  "homepage": "https://null-pixel-dev.github.io",
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.9.0",
