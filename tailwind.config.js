@@ -10,6 +10,10 @@ module.exports = {
         blue: "#00A0FF",
         teal: "#4BD0D0",
       },
+      fontFamily: {
+        orbitron: ["Orbitron", "sans-serif"],
+        exo: ["Exo", "sans-serif"],
+      },
     },
   },
   variants: {

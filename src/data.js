@@ -7,16 +7,3 @@ export const projects = [
     link: "https://github.com/null-pixel-dev/null-pixel-dev.github.io",
   },
 ];
-
-export const skills = [
-  "Git",
-  "HTML5",
-  "CSS3",
-  "Tailwind",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Node.js",
-  "Docker",
-  "Figma",
-];

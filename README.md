@@ -1,4 +1,4 @@
-# nullogan-portfolio
+# null-pixel-dev-portfolio
 
 This project is a first attempt at a website to showcase a portfolio, skills, qualifications and contact options.
 
